@@ -1,13 +1,10 @@
 <template>
-  <div>
-    记账
-    <Nav/>
-  </div>
+  <div>当前路径不存在，404</div>
 </template>
 
 <script>
   export default {
-    name: 'Money'
+    name: 'NotFound'
   }
 </script>
 

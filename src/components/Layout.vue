@@ -1,12 +1,15 @@
 <template>
-  <Layout>
-    记账
-  </Layout>
+  <div class="nav-wrapper">
+    <div class="content">
+      <slot/>
+    </div>
+    <Nav/>
+  </div>
 </template>
 
 <script>
   export default {
-    name: 'Money'
+    name: 'Layout'
   }
 </script>
 

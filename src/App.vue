@@ -5,27 +5,21 @@
 </template>
 
 <style lang="scss">
-  *{
-    margin: 0;padding: 0;
+  @import "~@/assets/style/helper.scss";
+  @import "~@/assets/style/reset.scss";
+  body{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: $font-hei;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #333333;
+    background: #f5f5f5;
   }
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+  @media (min-width: 500px) {
+    #app{
+      max-width: 500px;
+      margin: 0 auto;
     }
   }
-}
 </style>

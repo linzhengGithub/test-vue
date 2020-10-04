@@ -1,12 +1,16 @@
 <template>
   <Layout>
-    记账
+    <Types x="-"/>
+    <NumberPad/>
   </Layout>
 </template>
 
 <script>
+  import Types from '@/components/Money/Types'
+  import NumberPad from '@/components/Money/NumberPad'
   export default {
-    name: 'Money'
+    name: 'Money',
+    components: {NumberPad, Types}
   }
 </script>
 
